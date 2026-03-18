@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vault - Crypto Terminal</title>
+    <title>StackTrack - Crypto Terminal</title>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -153,7 +153,7 @@ function Vault() {
 
       {/* TOP BAR */}
       <div style={{ display: "flex", background: "#000008", borderBottom: `2px solid ${C.hdrOrange}`, padding: "3px 8px", alignItems: "center" }}>
-        <span style={{ color: C.orange, fontWeight: 900, fontSize: 14, letterSpacing: "0.06em" }}>VAULT</span>
+        <span style={{ color: C.orange, fontWeight: 900, fontSize: 14, letterSpacing: "0.06em" }}>STACKTRACK</span>
         <span style={{ color: C.muted, fontSize: 9, marginLeft: 8 }}>CRYPTO TERMINAL</span>
         <div style={{ flex: 1 }} />
         <span style={{ width: 6, height: 6, borderRadius: "50%", background: C.green, boxShadow: `0 0 6px ${C.green}`, display: "inline-block", marginRight: 4 }} />
@@ -371,7 +371,7 @@ function Vault() {
 
       {/* COMMAND LINE */}
       <div style={{ display: "flex", alignItems: "center", background: "#000008", borderTop: `2px solid ${C.hdrOrange}`, padding: "4px 8px", gap: 6 }}>
-        <span style={{ color: C.orange, fontWeight: 700 }}>VAULT&gt;</span>
+        <span style={{ color: C.orange, fontWeight: 700 }}>STACKTRACK&gt;</span>
         <input
           value={cmd} onChange={e => setCmd(e.target.value)}
           onKeyDown={e => { if (e.key === "Enter") setCmd(""); }}
